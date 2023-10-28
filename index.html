@@ -17,14 +17,14 @@
                 <div>
                     <h3>Ya tienes con una cuenta? </h3>
                     <p>Inicia sesion para continuar</p>
-                    <button>Enterar</button>
+                    <button id="button-inicio-sesion">Enterar</button>
                 </div>
     
                 <!-- fondo de inicio de sesion -->
                 <div>
                     <h3>Todavia no tienes una cuenta? </h3>
                     <p>Registrate para continuar</p>
-                    <button>registrarse</button>
+                    <button id="button-register">registrarse</button>
                 </div>
             </div>
 
@@ -33,18 +33,40 @@
                 <!-- inicio de sesion -->
                 <form id="login-form" action="">
                     <h2>Iniciar sesion</h2>
-                    <input type="text" placeholder="Correo electronico">
-                    <input type="text" placeholder="contraseña">
+                    <input type="text" placeholder="LoginId" required>
+                    <input type="text" placeholder="Contraseña" required>
                     <button>Entrar</button>
                 </form>
 
                 <!-- registro -->
-                <form id="register-form" action="">
+                <form id="register-form" action="" required>
                     <h2>Registrarse</h2>
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido">
-                    <input type="text" placeholder="Correo electronico">
-                    <input type="text" placeholder="contraseña">
+
+                    <div class="gridClass">
+                        <input type="text" class="name" placeholder="Nombre" required>
+                        <input type="text" class="lastName" placeholder="Apellido" required>
+                    </div>
+
+                    <div id="dataBorn-div">
+                        <p>Fecha de nacimiento</p>
+                        <input type="date" name="" required>
+                    </div>
+
+                    <input type="text" placeholder="Direccion" required>
+
+                    <div class="gridClass">
+                        <input type="text" placeholder="Telefono" required>
+                        <input type="text" placeholder="Cedula" required>
+                    </div>
+
+                    <input type="email" placeholder="Correo electronico" required>
+
+                    <div class="gridClass">
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                        <button type="button" id="showPasswordBtn">
+                        </button>
+                    </div>
+
                     <button>Registrarse</button>
                 </form>
 
