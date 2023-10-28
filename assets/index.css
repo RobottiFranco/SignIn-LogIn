@@ -102,7 +102,7 @@ main {
 }
 
 #forms-login-register input,
-#dataBorn p {
+#birthdate p {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -112,7 +112,7 @@ main {
     outline: none;
 }
 
-#dataBorn-div input {
+#birthdate-div input {
     margin-top: 8px;
 }
 

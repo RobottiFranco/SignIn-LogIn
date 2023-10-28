@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link id="icon" rel="icon" href="assets/img/icon.jpg">
+    <link id="icon" rel="icon" href="assets/img/icon.png">
     <link rel="stylesheet" href="/assets/index.css">
 </head>
 <body>
@@ -33,8 +33,8 @@
                 <!-- inicio de sesion -->
                 <form id="login-form" action="">
                     <h2>Iniciar sesion</h2>
-                    <input type="text" placeholder="LoginId" required>
-                    <input type="text" placeholder="Contraseña" required>
+                    <input type="text" id="loginId" placeholder="LoginId" required>
+                    <input type="text" id="LoginPassword" placeholder="Contraseña" required>
                     <button>Entrar</button>
                 </form>
 
@@ -43,23 +43,23 @@
                     <h2>Registrarse</h2>
 
                     <div class="gridClass">
-                        <input type="text" class="name" placeholder="Nombre" required>
-                        <input type="text" class="lastName" placeholder="Apellido" required>
+                        <input type="text" id="name" placeholder="Nombre" required>
+                        <input type="text" id="lastName" placeholder="Apellido" required>
                     </div>
 
-                    <div id="dataBorn-div">
+                    <div id="birthdate-div">
                         <p>Fecha de nacimiento</p>
-                        <input type="date" name="" required>
+                        <input type="date" id="birthdate" name="" required>
                     </div>
 
-                    <input type="text" placeholder="Direccion" required>
+                    <input type="text" id="address" placeholder="Direccion" required>
 
                     <div class="gridClass">
-                        <input type="text" placeholder="Telefono" required>
-                        <input type="text" placeholder="Cedula" required>
+                        <input type="number" id="phone" placeholder="Telefono" required>
+                        <input type="number" id="ci" placeholder="Cedula" required>
                     </div>
 
-                    <input type="email" placeholder="Correo electronico" required>
+                    <input type="email" id="email" placeholder="Correo electronico" required>
 
                     <div class="gridClass">
                         <input type="password" id="password" placeholder="Contraseña" required>
@@ -67,7 +67,7 @@
                         </button>
                     </div>
 
-                    <button>Registrarse</button>
+                    <button type="button"  id="registerbtn">Registrarse</button>
                 </form>
 
             </div>
