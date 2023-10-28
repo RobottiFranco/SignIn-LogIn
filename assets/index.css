@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: url(img/background.jpg);
+    background-image: url(img/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -35,7 +35,7 @@ main {
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgb(216, 112, 147, 0.6);
+    background-color: rgb(28, 40, 94, 0.6)
 }
 
 #background-card div {
@@ -67,7 +67,7 @@ main {
 }
 
 #background-card div button:hover {
-    color: palevioletred;
+    color: rgb(28, 40, 94);
     background-color: white;
 }
 
@@ -98,7 +98,7 @@ main {
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: palevioletred;
+    color: rgb(28, 40, 94);
 }
 
 #forms-login-register input,
@@ -130,7 +130,7 @@ main {
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: palevioletred;
+    background: rgb(28, 40, 94);
     font-weight: 600;
     cursor: pointer;
     color: white;
